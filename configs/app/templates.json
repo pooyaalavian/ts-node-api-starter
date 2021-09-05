@@ -1,0 +1,9 @@
+{
+  "resetPassword": {
+    "subject": "Password Reset Instructions",
+    "from": "Admin <admin@website.com>",
+    "bcc": [
+      "admin@website.com"
+    ]
+  }
+}
