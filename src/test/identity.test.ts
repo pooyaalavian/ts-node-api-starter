@@ -1,7 +1,7 @@
 import request, { } from 'supertest';
 import { connection } from 'mongoose';
-import { app } from '../src/app';
-import { initMongoose } from '../src/mongoose';
+import { app } from '../app';
+import { initMongoose } from '../mongoose';
 
 describe('identity.controller', () => {
   beforeAll(async () => {
