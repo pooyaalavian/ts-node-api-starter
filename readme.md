@@ -36,3 +36,10 @@ The `.json` files are accessible as objects. All other files are read as `utf8` 
 For example, contents of file `configs/sample/test.json` are accessible under `configs.sample.test` key.
 
 By default, all files in `configs/` are commited to git. If you have files that should not be commited, e.g., files that include passwords, keys, etc., add a `.secret` to their name. For example, `configs/azure.secret.json` can contain your Azure keys and it won't be commited to git (because `**.secret*` is in `.gitignore`), unless you forcefully commit it. To access secret variables, you don't need to specify `secret`, e.g., the contents of the above file can be accessed at `configs.azure`. See `src/settings.ts` for implementation.
+
+## License
+Copyright &copy; 2021 Pooya Alavian <alavian@smartproductionsystems.com>
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+**Make sure to check the license files of all dependencies to make sure they are compatible with your use case.**
